@@ -1,0 +1,19 @@
+{
+  "proizvodi": [],
+  "korisnik": [
+    {
+      "rola": "",
+      "username": "",
+      "password": "",
+      "email": "",
+      "id": ""
+    },
+    {
+      "rola": "user",
+      "username": "sasa",
+      "password": "sasa",
+      "email": "sasa",
+      "id": "Cz3uKbt"
+    }
+  ]
+}
