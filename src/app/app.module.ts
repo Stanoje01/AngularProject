@@ -14,6 +14,8 @@ import { ProizvodComponent } from './proizvod/proizvod.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AdminComponent } from './admin/admin.component';
+import { UserComponent } from './user/user.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ONamaComponent,
     LoginComponent,
     RegisterComponent,
-    ProizvodComponent
+    ProizvodComponent,
+    AdminComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,

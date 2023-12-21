@@ -2,18 +2,25 @@
   "proizvodi": [],
   "korisnik": [
     {
-      "rola": "",
-      "username": "",
-      "password": "",
-      "email": "",
-      "id": ""
-    },
-    {
       "rola": "user",
       "username": "sasa",
       "password": "sasa",
       "email": "sasa",
       "id": "Cz3uKbt"
+    },
+    {
+      "rola": "user",
+      "username": "aco",
+      "password": "AcoZivac123",
+      "email": "acozivac39@gmail.com",
+      "id": "xZXVxbe"
+    },
+    {
+      "rola": "admin",
+      "username": "aca",
+      "password": "Aca123",
+      "email": "acozivac39@gmail.com",
+      "id": "vZ2MXhh"
     }
   ]
 }
