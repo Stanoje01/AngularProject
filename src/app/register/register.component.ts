@@ -12,39 +12,40 @@ export class RegisterComponent implements OnInit {
 
 
   formValue!: FormGroup;
-  korisnikModel : Korisnik = new Korisnik()
-  korisnikData:any
-  showAdd!:boolean
+  korisnikModel: Korisnik = new Korisnik()
+  korisnikData: any
+  showAdd!: boolean
   constructor(private formBuilder: FormBuilder, private api: ApiService) {
     this.formValue = new FormGroup({
       username: new FormControl(''),
       email: new FormControl(''),
       password: new FormControl('')
     });
-   }
+  }
 
   ngOnInit(): void {
     this.formValue = this.formBuilder.group({
       id: [''],
-      username: [''], 
-      password: [''], 
+      username: [''],
+      password: [''],
       email: [''],
     })
   }
 
-  postKorisnik(){
-    this.korisnikModel.rola='user'
+  postKorisnik() {
+    this.korisnikModel.rola = 'user'
     this.korisnikModel.username = this.formValue.value.username
     this.korisnikModel.password = this.formValue.value.password
     this.korisnikModel.email = this.formValue.value.email
-    this.api.postKorisnik(this.korisnikModel).subscribe(res=>{
+    
+    this.api.postKorisnik(this.korisnikModel).subscribe(res => {
       console.log(res);
       alert("Uspesno ste se registrovali")
       this.formValue.reset();
-    }, 
-    err=>{
-      alert("Doslo je do greske!!!!!")
-    })
+    },
+      err => {
+        alert("Doslo je do greske!!!!!")
+      })
   }
 
 }

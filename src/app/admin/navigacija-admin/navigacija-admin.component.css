@@ -1,0 +1,16 @@
+.navbar-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.navbar-nav a {
+    color: white;
+    margin-right: 100px; /* Prilagodite margine prema potrebi */
+}
+
+.navbar-nav a:last-child {
+    margin-right:150px;
+    margin-left: 100px; /* Ukloni desnu marginu za poslednji link */
+}

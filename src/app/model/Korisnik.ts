@@ -1,5 +1,5 @@
 export class Korisnik {
-    id!: number
+    id: number=0
     rola: string = ''
     username: string = ''
     password: string = ''

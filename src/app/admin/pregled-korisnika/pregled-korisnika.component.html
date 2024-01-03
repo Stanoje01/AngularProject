@@ -1,0 +1,26 @@
+<app-navigacija-admin></app-navigacija-admin>
+<section class="center">
+    <h1> RAD SA BAZOM PODATAKA</h1>
+    <button (click)="dodajKorisnika()" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+        id="dugme">Dodaj korisnika</button>
+    <table id="tabela">
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Username</th>
+            <th scope="col">Password</th>
+            <th scope="col">Rola</th>
+            <th scope="col">Opcije</th>
+        </tr>
+        <tr *ngFor="let row of korisnikData">
+            <td>{{row.id}}</td>
+            <td>{{row.username}}</td>
+            <td>{{row.password}}</td>
+            <td>{{row.rola}}</td>
+            <td>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Izmeni</button>
+                <button class="btn btn-danger" (click)="obrisiKorisnika(row)">Obrisi</button>
+            </td>
+        </tr>
+    </table>
+</section>
+<app-footer-admin></app-footer-admin>

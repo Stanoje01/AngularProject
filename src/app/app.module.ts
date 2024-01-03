@@ -16,6 +16,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AdminComponent } from './admin/admin.component';
 import { UserComponent } from './user/user.component';
+import { NavigacijaAdminComponent } from './admin/navigacija-admin/navigacija-admin.component';
+import { PregledKorisnikaComponent } from './admin/pregled-korisnika/pregled-korisnika.component';
+import { FooterAdminComponent } from './admin/footer-admin/footer-admin.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +32,10 @@ import { UserComponent } from './user/user.component';
     RegisterComponent,
     ProizvodComponent,
     AdminComponent,
-    UserComponent
+    UserComponent,
+    NavigacijaAdminComponent,
+    PregledKorisnikaComponent,
+    FooterAdminComponent
   ],
   imports: [
     BrowserModule,

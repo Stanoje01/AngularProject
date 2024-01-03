@@ -7,6 +7,8 @@ import { ONamaComponent } from './o-nama/o-nama.component';
 import { RegisterComponent } from './register/register.component';
 import { AdminComponent } from './admin/admin.component';
 import { UserComponent } from './user/user.component';
+import { NavigacijaComponent } from './navigacija/navigacija.component';
+import { PregledKorisnikaComponent } from './admin/pregled-korisnika/pregled-korisnika.component';
 
 const routes: Routes = [
   { path:'kontakt', component:KontaktComponent},
@@ -15,7 +17,8 @@ const routes: Routes = [
   { path:'oNama', component:ONamaComponent},
   { path:'register', component:RegisterComponent},
   { path:'admin', component:AdminComponent},
-  { path:'user', component:UserComponent}
+  { path:'user', component:UserComponent},
+  { path:'korisnici', component:PregledKorisnikaComponent}
 ];
 
 @NgModule({

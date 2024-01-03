@@ -2,6 +2,13 @@
   "proizvodi": [],
   "korisnik": [
     {
+      "rola": "admin",
+      "username": "aca",
+      "password": "Aca123",
+      "email": "acozivac39@gmail.com",
+      "id": "vZ2MXhh"
+    },
+    {
       "rola": "user",
       "username": "sasa",
       "password": "sasa",
@@ -16,11 +23,11 @@
       "id": "xZXVxbe"
     },
     {
-      "rola": "admin",
-      "username": "aca",
-      "password": "Aca123",
-      "email": "acozivac39@gmail.com",
-      "id": "vZ2MXhh"
+      "rola": "user",
+      "username": "marko",
+      "password": "Marko123",
+      "email": "marko@gmail.com",
+      "id": "6EpdRbQ"
     }
   ]
 }
