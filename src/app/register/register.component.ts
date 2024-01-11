@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Form, FormBuilder, FormControl, FormGroup } from '@angular/forms';
 import { Korisnik } from '../model/Korisnik';
 import { ApiService } from '../api/api.service';
+import * as CryptoJS from 'crypto-js';
 
 @Component({
   selector: 'app-register',
@@ -37,7 +38,9 @@ export class RegisterComponent implements OnInit {
     this.korisnikModel.username = this.formValue.value.username
     this.korisnikModel.password = this.formValue.value.password
     this.korisnikModel.email = this.formValue.value.email
-    
+    const encryptedPassword = CryptoJS.SHA256(this.korisnikModel.password).toString(CryptoJS.enc.Hex);
+
+    this.korisnikModel.password = encryptedPassword;
     this.api.postKorisnik(this.korisnikModel).subscribe(res => {
       console.log(res);
       alert("Uspesno ste se registrovali")

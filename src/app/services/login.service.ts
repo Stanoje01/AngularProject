@@ -3,6 +3,7 @@ import { Injectable, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
 import { Subject } from 'rxjs';
+import * as CryptoJS from 'crypto-js';
 
 @Injectable({
   providedIn: 'root'
@@ -35,7 +36,9 @@ export class LoginService implements OnInit {
   login(username: string, password: string){
     this.http.get<any>(this.baseUrl).subscribe((data)=>{
       for(let korisnik of data){
-        if(korisnik.username === username && korisnik.password === password){
+        const storedPasswordHash = korisnik.password; // Heširana vrednost šifre sa servera
+        const enteredPasswordHash = CryptoJS.SHA256(password).toString(CryptoJS.enc.Hex);
+        if(korisnik.username === username && enteredPasswordHash === storedPasswordHash){
           localStorage.setItem('rola', korisnik.rola)
           let role = localStorage.getItem(korisnik.rola);
           if(role != null){

@@ -11,6 +11,7 @@ import { NavigacijaComponent } from './navigacija/navigacija.component';
 import { PregledKorisnikaComponent } from './admin/pregled-korisnika/pregled-korisnika.component';
 
 const routes: Routes = [
+  {path:'', redirectTo:'pocetna', pathMatch:'full'},
   { path:'kontakt', component:KontaktComponent},
   { path:'pocetna', component:PocetnastranaComponent},
   { path:'login', component:LoginComponent},

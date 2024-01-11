@@ -1,8 +1,9 @@
 <app-navigacija-admin></app-navigacija-admin>
+
 <section class="center">
     <h1> RAD SA BAZOM PODATAKA</h1>
-    <button (click)="dodajKorisnika()" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
-        id="dugme">Dodaj korisnika</button>
+    <button (click)="dodajKorisnika()" class="btn btn-success" data-bs-toggle="modal"
+        data-bs-target="#dodajKorisnikaModal" id="dugme">Dodaj korisnika</button>
     <table id="tabela">
         <tr>
             <th scope="col">ID</th>
@@ -17,10 +18,73 @@
             <td>{{row.password}}</td>
             <td>{{row.rola}}</td>
             <td>
-                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Izmeni</button>
+                <button class="btn btn-primary" (click)="onEdit(row)" data-bs-toggle="modal"
+                    data-bs-target="#izmeniKorisnikaModal">Izmeni</button>
                 <button class="btn btn-danger" (click)="obrisiKorisnika(row)">Obrisi</button>
             </td>
         </tr>
     </table>
 </section>
-<app-footer-admin></app-footer-admin>
+
+<div class="modal fade" id="dodajKorisnikaModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Forma za dodavanje korisnika</h1>
+                <button type="button" id="cancel" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form [formGroup]="formValue">
+                    <label for="username">Username</label>
+                    <input type="text" name="username" id="username" #newusername placeholder="Vas username"
+                        formControlName="username">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" #newpassword placeholder="Vas password"
+                        formControlName="password">
+                    <label for="rola">Rola</label>
+                    <input type="text" name="rola" id="rola" #newrola placeholder="Vas rola" formControlName="rola">
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" *ngIf="showAdd" (click)="postKorisnikDetails()"
+                    class="btn btn-primary">Dodaj</button>
+                <button type="button" *ngIf="showUpdate" (click)="updateKorisnikDetails()"
+                    class="btn btn-primary">Izmeni</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="izmeniKorisnikaModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Forma za izmenu korisnika</h1>
+                <button type="button" id="cancel" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form [formGroup]="formValue">
+                    <label for="username">Username</label>
+                    <input type="text" name="username" id="username" #newusername placeholder="Vas username"
+                        formControlName="username">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" #newpassword placeholder="Vas password"
+                        formControlName="password">
+                    <label for="rola">Rola</label>
+                    <input type="text" name="rola" id="rola" #newrola placeholder="Vas rola" formControlName="rola">
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" *ngIf="showAdd" (click)="postKorisnikDetails()"
+                    class="btn btn-primary">Dodaj</button>
+                <button type="button" *ngIf="showUpdate" (click)="updateKorisnikDetails()"
+                    class="btn btn-primary">Izmeni</button>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <app-footer-admin></app-footer-admin>
+</footer>

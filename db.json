@@ -2,32 +2,18 @@
   "proizvodi": [],
   "korisnik": [
     {
+      "id": "82A-DEp",
       "rola": "admin",
-      "username": "aca",
-      "password": "Aca123",
-      "email": "acozivac39@gmail.com",
-      "id": "vZ2MXhh"
+      "username": "Aca",
+      "password": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92",
+      "email": "Aca"
     },
     {
-      "rola": "user",
-      "username": "sasa",
-      "password": "sasa",
-      "email": "sasa",
-      "id": "Cz3uKbt"
-    },
-    {
-      "rola": "user",
-      "username": "aco",
-      "password": "AcoZivac123",
-      "email": "acozivac39@gmail.com",
-      "id": "xZXVxbe"
-    },
-    {
+      "id": "V3WK38t",
       "rola": "user",
       "username": "marko",
-      "password": "Marko123",
-      "email": "marko@gmail.com",
-      "id": "6EpdRbQ"
+      "password": "e3c4a8e68c23890091f9b9531ef3e0f805ce0a9378d6fb4bbcb6eed403c91342",
+      "email": "marko@gmail.com"
     }
   ]
 }
