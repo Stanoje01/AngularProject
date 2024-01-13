@@ -1,19 +1,60 @@
 {
-  "proizvodi": [],
+  "proizvodi": [
+    {
+      "id": 1,
+      "naziv": "Racunar 1",
+      "cena": "180.000,00 RSD",
+      "procesor": "Intel I7 7400",
+      "graficka": "RTX 4060",
+      "ram": "32",
+      "ssd":"1TB",
+      "slika":"https://img.gigatron.rs/img/products/large/image6567372c012b4.jpg"
+    },
+    {
+      "id": 1,
+      "naziv": "Racunar 1",
+      "cena": "180.000,00 RSD",
+      "procesor": "Intel I7 7400",
+      "graficka": "RTX 4060",
+      "ram": "32",
+      "ssd":"1TB",
+      "slika":"https://img.gigatron.rs/img/products/large/image6567372c012b4.jpg"
+    },
+    {
+      "id": 1,
+      "naziv": "Racunar 1",
+      "cena": "180.000,00 RSD",
+      "procesor": "Intel I7 7400",
+      "graficka": "RTX 4060",
+      "ram": "32",
+      "ssd":"1TB",
+      "slika":"https://img.gigatron.rs/img/products/large/image6567372c012b4.jpg"
+    },
+    {
+      "id": 1,
+      "naziv": "Racunar 1",
+      "cena": "180.000,00 RSD",
+      "procesor": "Intel I7 7400",
+      "graficka": "RTX 4060",
+      "ram": "32",
+      "ssd":"1TB",
+      "slika":"https://img.gigatron.rs/img/products/large/image6567372c012b4.jpg"
+    }
+  ],
   "korisnik": [
     {
-      "id": "82A-DEp",
+      "id": 1,
       "rola": "admin",
       "username": "Aca",
       "password": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92",
-      "email": "Aca"
+      "email": ""
     },
     {
-      "id": "V3WK38t",
+      "id": 2,
       "rola": "user",
       "username": "marko",
       "password": "e3c4a8e68c23890091f9b9531ef3e0f805ce0a9378d6fb4bbcb6eed403c91342",
-      "email": "marko@gmail.com"
+      "email": ""
     }
   ]
 }

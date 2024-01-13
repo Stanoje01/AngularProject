@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, FormControlName } from '@angular/forms';
+import { FormBuilder, FormGroup, FormControlName, Validators } from '@angular/forms';
 import { Korisnik } from 'src/app/model/Korisnik';
 import { BazaService } from 'src/app/services/baza.service';
 import * as CryptoJS from 'crypto-js';
@@ -20,13 +20,19 @@ export class PregledKorisnikaComponent implements OnInit {
   showAdd!: boolean;
   showUpdate!: boolean;
 
-  constructor(private formBuilder: FormBuilder, private baza: BazaService) { }
+  constructor(private formBuilder: FormBuilder, private baza: BazaService) {
+    this.formValue = this.formBuilder.group({
+      username: ['', Validators.required],
+      password: ['', Validators.required],
+      rola: ['', Validators.required],
+    })
+  }
 
   ngOnInit(): void {
     this.formValue = this.formBuilder.group({
       id: [''],
-      username: [''],
-      password: [''],
+      username: ['', Validators.required],
+      password: ['', Validators.required],
       rola: ['']
     })
 

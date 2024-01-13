@@ -1,3 +1,18 @@
 <app-navigacija></app-navigacija>
-<p>pocetnastrana works!</p>
+<div class="container">
+    <div class="row">
+      <div *ngFor="let product of products" class="col-md-4 mb-4">
+        <div class="card h-100">
+          <img [src]="product.slika" alt="{{ product.naziv }}" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">{{ product.naziv }}</h5>
+            <p class="card-text">Cena: {{ product.cena }}</p>
+          </div>
+          <div class="card-footer">
+            <button class="btn btn-primary">Dodaj u korpu</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
 <app-footer></app-footer>

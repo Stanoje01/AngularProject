@@ -1,0 +1,17 @@
+.card {
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 20px; /* Dodajte razmak između proizvoda */
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card-footer {
+    background-color: #f8f9fa;
+  }
+  
+  /* Razmak između navigacije i proizvoda */
+  .container {
+    margin-top: 20px;
+  }

@@ -1,4 +1,6 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { BazaService } from '../services/baza.service';
 
 @Component({
   selector: 'app-pocetnastrana',
@@ -7,9 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PocetnastranaComponent implements OnInit {
 
-  constructor() { }
+  products!: any[]; // Ovde ćemo čuvati podatke iz JSON-a
 
-  ngOnInit(): void {
+  constructor(private http: HttpClient, private baza: BazaService) {}
+
+  ngOnInit() {
+    this.baza.getProizvod().subscribe(
+      (data) => {
+        this.products = data;
+      },
+      (error) => {
+        console.error('Error fetching data:', error);
+      }
+    );
   }
 
 }

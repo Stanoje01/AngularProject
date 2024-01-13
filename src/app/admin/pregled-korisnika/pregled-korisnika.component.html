@@ -38,12 +38,21 @@
                 <form [formGroup]="formValue">
                     <label for="username">Username</label>
                     <input type="text" name="username" id="username" #newusername placeholder="Vas username"
-                        formControlName="username">
+                        formControlName="username" required>
+                        <div *ngIf="formValue.get('username')?.hasError('required') && formValue.get('username')?.touched">
+                            Username is required.
+                          </div>
                     <label for="password">Password</label>
                     <input type="password" name="password" id="password" #newpassword placeholder="Vas password"
-                        formControlName="password">
-                    <label for="rola">Rola</label>
-                    <input type="text" name="rola" id="rola" #newrola placeholder="Vas rola" formControlName="rola">
+                        formControlName="password" required>
+                        <div *ngIf="formValue.get('password')?.hasError('required') && formValue.get('password')?.touched">
+                            Password is required.
+                          </div>
+                        <label for="rola">Rola</label>
+                        <select name="rola" id="rola" #newrola formControlName="rola">
+                          <option value="admin">Admin</option>
+                          <option value="user">User</option>
+                        </select>
                 </form>
             </div>
             <div class="modal-footer">
@@ -68,12 +77,15 @@
                 <form [formGroup]="formValue">
                     <label for="username">Username</label>
                     <input type="text" name="username" id="username" #newusername placeholder="Vas username"
-                        formControlName="username">
+                        formControlName="username" readonly>
                     <label for="password">Password</label>
                     <input type="password" name="password" id="password" #newpassword placeholder="Vas password"
-                        formControlName="password">
-                    <label for="rola">Rola</label>
-                    <input type="text" name="rola" id="rola" #newrola placeholder="Vas rola" formControlName="rola">
+                        formControlName="password" readonly>
+                        <label for="rola">Rola</label>
+                        <select name="rola" id="rola" #newrola formControlName="rola">
+                          <option value="admin">Admin</option>
+                          <option value="user">User</option>
+                        </select>
                 </form>
             </div>
             <div class="modal-footer">
