@@ -1,0 +1,64 @@
+.graficka-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.graficka-card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 10px;
+  width: 250px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.graficka-card:hover {
+  transform: scale(1.05);
+}
+
+.graficka-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.graficka-details {
+  padding: 10px;
+}
+
+.graficka-details h2 {
+  margin-top: 0;
+  font-size: 18px; 
+}
+
+.graficka-details p {
+  margin: 5px 0;
+  font-size: 14px; 
+}
+
+.graficka-title {
+  font-size: 35px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.sort-container{
+  text-align: right;
+}
+
+label[for="sort"] {
+  margin-right: 10px;
+  transition: color 0.3s ease-in-out;
+}
+
+label[for="sort"]:hover {
+  color: #007bff; /* Promenite boju prema vašim željama */
+}
+
+/* Stilizujemo select za sortiranje */
+#sort {
+  padding: 5px;
+  font-size: 14px;
+}

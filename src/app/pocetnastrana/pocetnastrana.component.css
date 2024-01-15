@@ -1,17 +1,86 @@
 .card {
-    transition: transform 0.3s ease-in-out;
-    margin-bottom: 20px; /* Dodajte razmak između proizvoda */
-  }
-  
-  .card:hover {
-    transform: scale(1.05);
-  }
-  
-  .card-footer {
-    background-color: #f8f9fa;
-  }
-  
-  /* Razmak između navigacije i proizvoda */
-  .container {
-    margin-top: 20px;
-  }
+  transition: transform 0.3s ease-in-out;
+  margin-bottom: 20px;
+  /* Dodajte razmak između proizvoda */
+  height: 100%;
+  /* Postavite visinu kartice na 100% */
+}
+
+.card-img-top {
+
+  object-fit: contain;
+  /* Podesite objektno prileganje za sliku */
+  max-height: 150px;
+  /* Postavite maksimalnu visinu slike */
+}
+
+
+.card-body {
+  padding: 10px;
+  /* Smanjite razmak unutar tela kartice */
+}
+
+.card-title {
+  font-size: 1.2rem;
+  /* Smanjite veličinu naslova */
+}
+
+.card-text {
+  font-size: 1rem;
+  /* Smanjite veličinu teksta */
+}
+
+.card-footer {
+  background-color: #f8f9fa;
+  padding: 10px;
+  /* Smanjite razmak unutar podnožja kartice */
+}
+
+/* Razmak između navigacije i proizvoda */
+.container {
+  margin-top: 20px;
+}
+
+.slider-container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  margin-top: 50px;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.product-container {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Stilovi za countdown */
+.countdown {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ff6347;
+  /* Tomato color */
+}

@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { ThisReceiver } from '@angular/compiler';
 import { Injectable } from '@angular/core';
-import { map } from 'rxjs';
+import { Observable, map } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -30,6 +30,15 @@ export class BazaService {
 
   getProizvod() {
     return this.http.get(this.baseUrl2).pipe(map((res: any) => { return res; }))
+  }
+
+  getProizvodByTip(tip: string){
+    return this.http.get<any[]>(`${this.baseUrl2}?tip=${tip}`);
+  }
+
+  getDesktopById(desktopId: number): Observable<any> {
+    const url = `${this.baseUrl2}/${desktopId}`; // Prilagodite putanju prema vašem API-ju
+    return this.http.get<any>(url);
   }
 
 }

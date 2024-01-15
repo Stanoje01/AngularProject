@@ -1,0 +1,23 @@
+<app-navigacija></app-navigacija>
+
+<h1 class="graficka-title">Grafičke kartice</h1>
+
+<div class="sort-container">
+    <label for="sort">Sortiraj po ceni:</label>
+    <select id="sort" [(ngModel)]="sortBy" (change)="sortGraficka()">
+        <option value="asc">Najniža cena</option>
+        <option value="desc">Najviša cena</option>
+    </select>
+</div>
+<div id="graficka-list" class="graficka-list" routerLink="/pocetna">
+    <div *ngFor="let graficka of sortedGraficka" class="graficka-card">
+        <div class="graficka-image">
+            <img [src]="graficka.slika" alt="{{ graficka.naziv }}">
+        </div>
+        <div class="graficka-details">
+            <h2>{{ graficka.naziv }}</h2>
+            <p>Cena: {{ graficka.cena }} RSD</p>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

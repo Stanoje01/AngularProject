@@ -1,0 +1,25 @@
+<app-navigacija></app-navigacija>
+
+
+<h1 class="desktop-title">Desktop</h1>
+
+<div class="sort-container">
+    <label for="sort">Sortiraj po ceni:</label>
+    <select id="sort" [(ngModel)]="sortBy" (change)="sortDesktop()">
+        <option value="asc">Najniža cena</option>
+        <option value="desc">Najviša cena</option>
+    </select>
+</div>
+
+<div id="desktop-list" class="desktop-list">
+    <div *ngFor="let desktop of sortedDesktop" class="desktop-card" [routerLink]="['/proizvodi', desktop.id]">
+        <div class="desktop-image">
+            <img [src]="desktop.slika" alt="{{ desktop.naziv }}">
+        </div>
+        <div class="desktop-details">
+            <h2>{{ desktop.naziv }}</h2>
+            <p>Cena: {{ desktop.cena }} RSD</p>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

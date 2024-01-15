@@ -2,43 +2,135 @@
   "proizvodi": [
     {
       "id": 1,
-      "naziv": "Racunar 1",
-      "cena": "180.000,00 RSD",
+      "naziv": "TUF GAMING",
+      "cena": 180.999,
       "procesor": "Intel I7 7400",
       "graficka": "RTX 4060",
       "ram": "32",
       "ssd":"1TB",
-      "slika":"https://img.gigatron.rs/img/products/large/image6567372c012b4.jpg"
+      "slika":"https://img.gigatron.rs/img/products/large/image6567372c012b4.jpg",
+      "tip":"desktop"
+      
     },
     {
-      "id": 1,
-      "naziv": "Racunar 1",
-      "cena": "180.000,00 RSD",
-      "procesor": "Intel I7 7400",
-      "graficka": "RTX 4060",
+      "id": 2,
+      "naziv": "Prime Pro Z1160",
+      "cena": 134.999,
+      "procesor": "AMD Ryzen 5 7600X do 5.3 Ghz",
+      "graficka": "AMD Radeon RX 7600",
       "ram": "32",
       "ssd":"1TB",
-      "slika":"https://img.gigatron.rs/img/products/large/image6567372c012b4.jpg"
+      "slika":"https://img.gigatron.rs/img/products/large/image6573122ed44c4.jpg",
+      "tip":"desktop"
     },
     {
-      "id": 1,
-      "naziv": "Racunar 1",
-      "cena": "180.000,00 RSD",
-      "procesor": "Intel I7 7400",
-      "graficka": "RTX 4060",
+      "id": 3,
+      "naziv": "Prime Pro Spooky",
+      "cena": 105.999,
+      "procesor": "Intel Core i5-11400F do 4.40 GHz",
+      "graficka": "AMD Radeon RX 6700",
       "ram": "32",
       "ssd":"1TB",
-      "slika":"https://img.gigatron.rs/img/products/large/image6567372c012b4.jpg"
+      "slika":"https://img.gigatron.rs/img/products/large/image65a4d73eb65eb.jpg",
+      "tip":"desktop"
     },
     {
-      "id": 1,
-      "naziv": "Racunar 1",
-      "cena": "180.000,00 RSD",
-      "procesor": "Intel I7 7400",
-      "graficka": "RTX 4060",
+      "id": 4,
+      "naziv": "Prime Pro Spectrum",
+      "cena": 68.999,
+      "procesor": "AMD Ryzen 5 4500 do 4.1GHz",
+      "graficka": "AMD Radeon RX 6600",
       "ram": "32",
       "ssd":"1TB",
-      "slika":"https://img.gigatron.rs/img/products/large/image6567372c012b4.jpg"
+      "slika":"https://img.gigatron.rs/img/products/large/image6578743a6fe50.jpg",
+      "tip":"desktop"
+      
+    },
+    {
+      "id": 5,
+      "naziv": "Prime Pro Z1150",
+      "cena": 209.999,
+      "procesor": "AMD Ryzen 7 5800X3D do 4.5 GHz",
+      "graficka": "RTX 4070",
+      "ram": "32",
+      "ssd":"1TB",
+      "slika":"https://img.gigatron.rs/img/products/large/image65815666df59c.jpg",
+      "tip":"desktop"
+      
+    },
+    {
+      "id": 6,
+      "naziv": "INTEL Pentium Gold G6400 4.00 GHz",
+      "cena": 8.999,
+      "slika":"https://img.gigatron.rs/img/products/large/INTEL-Pentium-Gold-G6400-4.00-GHz-.png",
+      "tip":"procesor"
+      
+    },
+    {
+      "id": 7,
+      "naziv": "AMD Ryzen 5 5500 3.6GHz (4.2GHz)",
+      "cena": 14.999,
+      "slika":"https://img.gigatron.rs/img/products/large/image631b2dd54b42f.png",
+      "tip":"procesor"
+      
+    },
+    {
+      "id": 8,
+      "naziv": "INTEL Core i9-11900KF 3.5GHz (5.30 GHz)",
+      "cena": 43.999,
+      "slika":"https://img.gigatron.rs/img/products/large/INTEL-Core-i9-11900KF-3.5GHz-(5.30-GHz)-22.png",
+      "tip":"procesor"
+    },
+    {
+      "id": 9,
+      "naziv": "AMD Ryzen 9 5950X 3.4GHz (4.9GHz)",
+      "cena": 69.999,
+      "slika":"https://img.gigatron.rs/img/products/large/image631b325861892.png",
+      "tip":"procesor"
+    },
+    {
+      "id": 10,
+      "naziv": "INTEL Core i7-11700K 3.6GHz (5.00 GHz)",
+      "cena": 41.999,
+      "slika":"https://img.gigatron.rs/img/products/large/image62a9c593621a6.png",
+      "tip":"procesor"
+    },
+    {
+      "id": 11,
+      "naziv": "MSI RTX 4060Ti Ventus 2X OC RTX 4060TI VENTUS 2X",
+      "cena": 64.999,
+      "slika":"https://img.gigatron.rs/img/products/large/image646f5cfe0e94f.jpg",
+      "tip":"graficka"
+    },
+    {
+      "id": 12,
+      "naziv": "GIGABYTE nVidia GeForce RTX 4090 GAMING OC 24GB GDD66X",
+      "cena": 279.999,
+      "slika":"https://img.gigatron.rs/img/products/large/image63456dad3fd6b.png",
+      "tip":"graficka"
+    },
+    {
+      "id": 13,
+      "naziv": "ZOTAC nVidia GeForce RTX 3060 Twin Edge 12GB GDDR6",
+      "cena": 41.999,
+      "slika":"https://img.gigatron.rs/img/products/large/image63973955c130a.png",
+      "tip":"graficka"
+    },
+    {
+      "id": 14,
+      "naziv": "GIGABYTE GeForce RTX 3060 GAMING OC LHR 12GB GDDR6 ",
+      "cena": 49.999,
+      "slika":"https://img.gigatron.rs/img/products/large/GIGABYTE-GeForce-RTX-3060-GAMING-OC-12GB-GDDR6-192-bit-(rev.-2.0)-GV-N3060GAMING-OC-12D-38.png",
+      "tip":"graficka"
+      
+    },
+    {
+      "id": 15,
+      "naziv": "INTEL Arc A750 Graphics 8 GB GDDR6",
+      "cena": 41.999,
+      "slika":"https://img.gigatron.rs/img/products/large/image6554a0187a61a.jpg",
+      "tip":"graficka"
+      
     }
   ],
   "korisnik": [

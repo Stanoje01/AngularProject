@@ -1,0 +1,25 @@
+<app-navigacija></app-navigacija>
+
+
+<h1 class="procesor-title">Procesori</h1>
+
+<div class="sort-container">
+    <label for="sort">Sortiraj po ceni:</label>
+    <select id="sort" [(ngModel)]="sortBy" (change)="sortProcesori()">
+        <option value="asc">Najniža cena</option>
+        <option value="desc">Najviša cena</option>
+    </select>
+</div>
+
+<div id="procesori-list" class="procesori-list">
+    <div *ngFor="let procesor of sortedProcesori" class="procesor-card">
+        <div class="procesor-image">
+            <img [src]="procesor.slika" alt="{{ procesor.naziv }}">
+        </div>
+        <div class="procesor-details">
+            <h2>{{ procesor.naziv }}</h2>
+            <p>Cena: {{ procesor.cena }} RSD</p>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

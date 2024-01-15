@@ -19,6 +19,12 @@ import { UserComponent } from './user/user.component';
 import { NavigacijaAdminComponent } from './admin/navigacija-admin/navigacija-admin.component';
 import { PregledKorisnikaComponent } from './admin/pregled-korisnika/pregled-korisnika.component';
 import { FooterAdminComponent } from './admin/footer-admin/footer-admin.component';
+import { ProcesorComponent } from './proizvod/procesor/procesor.component';
+import { GrafickaComponent } from './proizvod/graficka/graficka.component';
+import { DesktopRacunarComponent } from './proizvod/desktop-racunar/desktop-racunar.component';
+import { DesktopSpecifikacijaComponent } from './proizvod/desktop-specifikacija/desktop-specifikacija.component';
+import { ProcesorSpecifikacijaComponent } from './proizvod/procesor-specifikacija/procesor-specifikacija.component';
+import { GrafickaSpecifikacijaComponent } from './proizvod/graficka-specifikacija/graficka-specifikacija.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +41,13 @@ import { FooterAdminComponent } from './admin/footer-admin/footer-admin.componen
     UserComponent,
     NavigacijaAdminComponent,
     PregledKorisnikaComponent,
-    FooterAdminComponent
+    FooterAdminComponent,
+    ProcesorComponent,
+    GrafickaComponent,
+    DesktopRacunarComponent,
+    DesktopSpecifikacijaComponent,
+    ProcesorSpecifikacijaComponent,
+    GrafickaSpecifikacijaComponent
   ],
   imports: [
     BrowserModule,
