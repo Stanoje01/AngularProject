@@ -10,6 +10,7 @@ export class BazaService {
 
   baseUrl = "http://localhost:3000/korisnik"
   baseUrl2 = "http://localhost:3000/proizvodi"
+  baseUrl3 = "http://localhost:3000/rezervacija"
   constructor(private http: HttpClient) { }
 
   getKorisnik() {
@@ -32,7 +33,7 @@ export class BazaService {
     return this.http.get(this.baseUrl2).pipe(map((res: any) => { return res; }))
   }
 
-  getProizvodByTip(tip: string){
+  getProizvodByTip(tip: string) {
     return this.http.get<any[]>(`${this.baseUrl2}?tip=${tip}`);
   }
 
@@ -41,4 +42,15 @@ export class BazaService {
     return this.http.get<any>(url);
   }
 
+  postRezervacija(data: any) {
+    return this.http.post<any>(this.baseUrl3, data).pipe(map((res: any) => { return res }))
+  }
+
+  getRezervacija() {
+    return this.http.get<any[]>(this.baseUrl3).pipe(map((res: any) => { return res; }))
+  }
+
+  deleteRezervacija(id: number) {
+    return this.http.delete(this.baseUrl3 + "/" + id).pipe(map((res: any) => { return res }))
+  }
 }

@@ -7,7 +7,6 @@ import { NavigacijaComponent } from './navigacija/navigacija.component';
 import { FooterComponent } from './footer/footer.component';
 import { KontaktComponent } from './kontakt/kontakt.component';
 import { PocetnastranaComponent } from './pocetnastrana/pocetnastrana.component';
-import { ONamaComponent } from './o-nama/o-nama.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { ProizvodComponent } from './proizvod/proizvod.component';
@@ -23,6 +22,8 @@ import { ProcesorComponent } from './proizvod/procesor/procesor.component';
 import { GrafickaComponent } from './proizvod/graficka/graficka.component';
 import { DesktopRacunarComponent } from './proizvod/desktop-racunar/desktop-racunar.component';
 import { SpecifikacijaProizvodaComponent } from './proizvod/specifikacija-proizvoda/specifikacija-proizvoda.component';
+import { PregledRezervacijeComponent } from './admin/pregled-rezervacije/pregled-rezervacije.component';
+import { PregledProizvodaComponent } from './admin/pregled-proizvoda/pregled-proizvoda.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,6 @@ import { SpecifikacijaProizvodaComponent } from './proizvod/specifikacija-proizv
     FooterComponent,
     KontaktComponent,
     PocetnastranaComponent,
-    ONamaComponent,
     LoginComponent,
     RegisterComponent,
     ProizvodComponent,
@@ -43,7 +43,9 @@ import { SpecifikacijaProizvodaComponent } from './proizvod/specifikacija-proizv
     ProcesorComponent,
     GrafickaComponent,
     DesktopRacunarComponent,
-    SpecifikacijaProizvodaComponent
+    SpecifikacijaProizvodaComponent,
+    PregledRezervacijeComponent,
+    PregledProizvodaComponent
   ],
   imports: [
     BrowserModule,

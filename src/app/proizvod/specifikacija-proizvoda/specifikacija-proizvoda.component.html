@@ -13,9 +13,51 @@
     <p *ngIf="desktopSpecifikacije.graficka"><strong>Grafička:</strong> {{ desktopSpecifikacije.graficka }}</p>
     <p *ngIf="desktopSpecifikacije.memorija"><strong>Memorija:</strong> {{ desktopSpecifikacije.memorija }}</p>
     <p *ngIf="desktopSpecifikacije.bit"><strong>BIT:</strong> {{ desktopSpecifikacije.bit }}</p>
-    <p *ngIf="desktopSpecifikacije.cors"><strong>Cors:</strong> {{ desktopSpecifikacije.cors }}</p>
+    <p *ngIf="desktopSpecifikacije.cors"><strong>Cores:</strong> {{ desktopSpecifikacije.cors }}</p>
     <p *ngIf="desktopSpecifikacije.threads"><strong>Threads:</strong> {{ desktopSpecifikacije.threads }}</p>
     <p *ngIf="desktopSpecifikacije.ghz"><strong>GHz:</strong> {{ desktopSpecifikacije.ghz }}</p>
+    <button class="btn btn-warning" (click)="onEdit(desktopSpecifikacije)" data-bs-toggle="modal"
+    data-bs-target="#izmeniProizvodModal"> Rezerviši</button>
   </div>
+</div>
+
+<div class="modal fade" id="izmeniProizvodModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5 text-primary" id="staticBackdropLabel">Forma za rezervaciju proizvoda</h1>
+                <button type="button" id="cancel" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form [formGroup]="formValue">
+                    <div class="mb-3">
+                        <label for="ime" class="form-label">Ime</label>
+                        <input type="text" name="ime" id="ime" #newime class="form-control" placeholder="Vaše ime" formControlName="ime">
+                    </div>
+                    <div class="mb-3">
+                        <label for="prezime" class="form-label">Prezime</label>
+                        <input type="text" name="prezime" id="prezime" #newprezime class="form-control" placeholder="Vaše prezime" formControlName="prezime">
+                    </div>
+                    <div class="mb-3">
+                        <label for="adresa" class="form-label">Adresa</label>
+                        <input type="text" name="adresa" id="adresa" #newadresa class="form-control" placeholder="Vaša adresa" formControlName="adresa">
+                    </div>
+                    <div class="mb-3">
+                        <label for="naziv" class="form-label">Naziv</label>
+                        <input type="text" name="naziv" id="naziv" #newnaziv class="form-control" placeholder="Vaš naziv" formControlName="naziv" readonly>
+                    </div>
+                    <div class="mb-3">
+                        <label for="cena" class="form-label">Cena</label>
+                        <input type="cena" name="cena" id="cena" #newcena class="form-control" placeholder="Vaša cena" formControlName="cena" readonly>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" *ngIf="showAdd" (click)="postKorisnikDetails()" class="btn btn-success">Dodaj</button>
+                <button type="button" *ngIf="showUpdate" (click)="postProizvodDetails()" class="btn btn-primary">Izmeni</button>
+            </div>
+        </div>
+    </div>
 </div>
   <app-footer></app-footer>

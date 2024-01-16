@@ -1,0 +1,33 @@
+<app-navigacija-admin></app-navigacija-admin>
+
+<section class="center">
+    <h1> RAD SA REZERVACIJAMA</h1>
+    <table id="tabela">
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Naziv</th>
+            <th scope="col">Cena</th>
+            <th scope="col">Ime</th>
+            <th scope="col">Prezime</th>
+            <th scope="col">Adresa</th>
+            <th scope="col">Opcije</th>
+    
+        </tr>
+        <tr *ngFor="let row of rezervacijaData">
+            <td>{{row.id}}</td>
+            <td>{{row.naziv}}</td>
+            <td>{{row.cena}}</td>
+            <td>{{row.ime}}</td>
+            <td>{{row.prezime}}</td>
+            <td>{{row.adresa}}</td>
+            <td>
+                <button class="btn btn-primary" (click)="posaljiRezervacija(row)" data-bs-toggle="modal"
+                    data-bs-target="#izmeniRezervacijaaModal">Pošalji</button>
+                <button class="btn btn-danger" (click)="obrisiRezervacija(row)">Otkaži</button>
+            </td>
+        </tr>
+    </table>
+</section>
+<footer>
+    <app-footer-admin></app-footer-admin>
+</footer>
