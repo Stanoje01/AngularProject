@@ -1,0 +1,21 @@
+<app-navigacija></app-navigacija>
+<h1 class="desktop-title">Prikaz specifikacija</h1>
+<div *ngIf="desktopSpecifikacije" class="desktop-details-container">
+  <div class="desktop-image">
+    <img [src]="desktopSpecifikacije.slika" alt="{{ desktopSpecifikacije.naziv }}">
+  </div>
+  <div class="desktop-info">
+    <h2>{{ desktopSpecifikacije.naziv }}</h2>
+    <p class="desktop-price">{{ desktopSpecifikacije.cena }} RSD</p>
+    <p *ngIf="desktopSpecifikacije.procesor"><strong>CPU:</strong> {{ desktopSpecifikacije.procesor }}</p>
+    <p *ngIf="desktopSpecifikacije.ssd"><strong>SSD:</strong> {{ desktopSpecifikacije.ssd }}</p>
+    <p *ngIf="desktopSpecifikacije.ram"><strong>RAM:</strong> {{ desktopSpecifikacije.ram }} GB</p>
+    <p *ngIf="desktopSpecifikacije.graficka"><strong>Grafička:</strong> {{ desktopSpecifikacije.graficka }}</p>
+    <p *ngIf="desktopSpecifikacije.memorija"><strong>Memorija:</strong> {{ desktopSpecifikacije.memorija }}</p>
+    <p *ngIf="desktopSpecifikacije.bit"><strong>BIT:</strong> {{ desktopSpecifikacije.bit }}</p>
+    <p *ngIf="desktopSpecifikacije.cors"><strong>Cors:</strong> {{ desktopSpecifikacije.cors }}</p>
+    <p *ngIf="desktopSpecifikacije.threads"><strong>Threads:</strong> {{ desktopSpecifikacije.threads }}</p>
+    <p *ngIf="desktopSpecifikacije.ghz"><strong>GHz:</strong> {{ desktopSpecifikacije.ghz }}</p>
+  </div>
+</div>
+  <app-footer></app-footer>

@@ -36,8 +36,8 @@ export class BazaService {
     return this.http.get<any[]>(`${this.baseUrl2}?tip=${tip}`);
   }
 
-  getDesktopById(desktopId: number): Observable<any> {
-    const url = `${this.baseUrl2}/${desktopId}`; // Prilagodite putanju prema vašem API-ju
+  getProizvodById(proizvodId: number): Observable<any> {
+    const url = `${this.baseUrl2}/${proizvodId}`;
     return this.http.get<any>(url);
   }
 

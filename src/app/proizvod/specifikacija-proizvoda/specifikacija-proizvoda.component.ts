@@ -3,11 +3,11 @@ import { ActivatedRoute } from '@angular/router';
 import { BazaService } from 'src/app/services/baza.service';
 
 @Component({
-  selector: 'app-desktop-specifikacija',
-  templateUrl: './desktop-specifikacija.component.html',
-  styleUrls: ['./desktop-specifikacija.component.css']
+  selector: 'app-specifikacija-proizvoda',
+  templateUrl: './specifikacija-proizvoda.component.html',
+  styleUrls: ['./specifikacija-proizvoda.component.css']
 })
-export class DesktopSpecifikacijaComponent implements OnInit {
+export class SpecifikacijaProizvodaComponent implements OnInit {
 
   desktopId!: number;
   desktopSpecifikacije: any; // Prilagodite ovo prema vašim podacima
@@ -22,7 +22,7 @@ export class DesktopSpecifikacijaComponent implements OnInit {
   }
 
   getDesktopSpecifikacije() {
-    this.desktopService.getDesktopById(this.desktopId).subscribe(
+    this.desktopService.getProizvodById(this.desktopId).subscribe(
       (data) => {
         this.desktopSpecifikacije = data;
       },

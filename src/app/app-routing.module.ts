@@ -14,7 +14,8 @@ import { ProizvodComponent } from './proizvod/proizvod.component';
 import { ProcesorComponent } from './proizvod/procesor/procesor.component';
 import { GrafickaComponent } from './proizvod/graficka/graficka.component';
 import { DesktopRacunarComponent } from './proizvod/desktop-racunar/desktop-racunar.component';
-import { DesktopSpecifikacijaComponent } from './proizvod/desktop-specifikacija/desktop-specifikacija.component';
+import { SpecifikacijaProizvodaComponent } from './proizvod/specifikacija-proizvoda/specifikacija-proizvoda.component';
+
 
 const routes: Routes = [
   { path: '', redirectTo: 'pocetna', pathMatch: 'full' },
@@ -30,8 +31,7 @@ const routes: Routes = [
   { path: 'proizvodi/procesori', component: ProcesorComponent },
   { path: 'proizvodi/graficka', component: GrafickaComponent },
   { path: 'proizvodi/desktop', component: DesktopRacunarComponent },
-  { path: 'proizvodi/:id', component: DesktopSpecifikacijaComponent }
-  
+  { path: 'proizvodi/:id', component: SpecifikacijaProizvodaComponent}
 ];
 
 @NgModule({

@@ -22,9 +22,7 @@ import { FooterAdminComponent } from './admin/footer-admin/footer-admin.componen
 import { ProcesorComponent } from './proizvod/procesor/procesor.component';
 import { GrafickaComponent } from './proizvod/graficka/graficka.component';
 import { DesktopRacunarComponent } from './proizvod/desktop-racunar/desktop-racunar.component';
-import { DesktopSpecifikacijaComponent } from './proizvod/desktop-specifikacija/desktop-specifikacija.component';
-import { ProcesorSpecifikacijaComponent } from './proizvod/procesor-specifikacija/procesor-specifikacija.component';
-import { GrafickaSpecifikacijaComponent } from './proizvod/graficka-specifikacija/graficka-specifikacija.component';
+import { SpecifikacijaProizvodaComponent } from './proizvod/specifikacija-proizvoda/specifikacija-proizvoda.component';
 
 @NgModule({
   declarations: [
@@ -45,9 +43,7 @@ import { GrafickaSpecifikacijaComponent } from './proizvod/graficka-specifikacij
     ProcesorComponent,
     GrafickaComponent,
     DesktopRacunarComponent,
-    DesktopSpecifikacijaComponent,
-    ProcesorSpecifikacijaComponent,
-    GrafickaSpecifikacijaComponent
+    SpecifikacijaProizvodaComponent
   ],
   imports: [
     BrowserModule,

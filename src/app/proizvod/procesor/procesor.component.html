@@ -12,7 +12,7 @@
 </div>
 
 <div id="procesori-list" class="procesori-list">
-    <div *ngFor="let procesor of sortedProcesori" class="procesor-card">
+    <div *ngFor="let procesor of sortedProcesori" class="procesor-card" [routerLink]="['/proizvodi', procesor.id]">
         <div class="procesor-image">
             <img [src]="procesor.slika" alt="{{ procesor.naziv }}">
         </div>

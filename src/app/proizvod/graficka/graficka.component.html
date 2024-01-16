@@ -9,8 +9,8 @@
         <option value="desc">Najviša cena</option>
     </select>
 </div>
-<div id="graficka-list" class="graficka-list" routerLink="/pocetna">
-    <div *ngFor="let graficka of sortedGraficka" class="graficka-card">
+<div id="graficka-list" class="graficka-list">
+    <div *ngFor="let graficka of sortedGraficka" class="graficka-card" [routerLink]="['/proizvodi', graficka.id]">
         <div class="graficka-image">
             <img [src]="graficka.slika" alt="{{ graficka.naziv }}">
         </div>

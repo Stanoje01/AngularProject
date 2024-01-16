@@ -1,0 +1,36 @@
+.desktop-title {
+    font-size: 35px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .desktop-details-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f8f8f8;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .desktop-image img {
+    width: 300px;
+    height: 300px;
+    border-radius: 8px;
+  }
+  
+  .desktop-info {
+    max-width: 400px;
+  }
+  
+  .desktop-price {
+    font-size: 1.5em;
+    color: #e44d26;
+    margin-bottom: 10px;
+  }
+  
+  .desktop-info p {
+    margin: 5px 0;
+  }
