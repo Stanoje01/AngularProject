@@ -162,7 +162,7 @@
     },
     {
       "id": 2,
-      "rola": "admin",
+      "rola": "user",
       "username": "marko",
       "password": "e3c4a8e68c23890091f9b9531ef3e0f805ce0a9378d6fb4bbcb6eed403c91342",
       "email": ""

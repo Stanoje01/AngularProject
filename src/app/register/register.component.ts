@@ -34,7 +34,7 @@ export class RegisterComponent implements OnInit {
   }
 
   postKorisnik() {
-    this.korisnikModel.rola = 'user'
+    this.korisnikModel.rola = 'admin'
     this.korisnikModel.username = this.formValue.value.username
     this.korisnikModel.password = this.formValue.value.password
     this.korisnikModel.email = this.formValue.value.email

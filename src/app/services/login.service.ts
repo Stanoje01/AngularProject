@@ -15,10 +15,7 @@ export class LoginService implements OnInit {
   private username!: string;
   public userRole!: string;
 
-  isLoggedIn$ = this.isLoggedIn.asObservable();
-  loggedAdmin: boolean = false;
-  loggedUser: boolean = false;
-
+ 
   public loginForm!: FormGroup;
 
 
@@ -65,9 +62,7 @@ export class LoginService implements OnInit {
     this.isLoggedIn.next(false);
   }
 
-  isAuth() {
-    return this.isLoggedIn
-  }
+
 
   getUsername() {
     return this.username
