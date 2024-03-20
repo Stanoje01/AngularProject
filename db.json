@@ -149,6 +149,15 @@
       "cena": 41.999,
       "slika": "https://img.gigatron.rs/img/products/large/image6554a0187a61a.jpg",
       "tip": "graficka"
+    },
+    {
+      "id": 16,
+      "naziv": "INTEL Arc A750 Graphics 8 GB GDDR6",
+      "memorija": "8 GB",
+      "bit": "192 bit",
+      "cena": 41.999,
+      "slika": "https://img.gigatron.rs/img/products/large/image6554a0187a61a.jpg",
+      "tip": "desktop"
     }
   ],
   "rezervacija": [],
