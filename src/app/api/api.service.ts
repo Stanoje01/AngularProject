@@ -10,7 +10,7 @@ export class ApiService {
   constructor( private http : HttpClient) { }
 
   postKorisnik(data : any) {
-    return this.http.post<any>("http://localhost:3000/korisnik/", data)
+    return this.http.post<any>("http://localhost:8080/api/korisnici/registracija", data)
     .pipe(map((res:any)=>{
       return res;
     }))

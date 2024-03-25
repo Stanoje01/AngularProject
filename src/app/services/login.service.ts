@@ -10,7 +10,7 @@ import * as CryptoJS from 'crypto-js';
 })
 export class LoginService implements OnInit {
 
-  public baseUrl = "http://localhost:3000/korisnik"
+  public baseUrl = "http://localhost:8080/korisnik"
   private isLoggedIn = new Subject<boolean>();
   private username!: string;
   public userRole!: string;

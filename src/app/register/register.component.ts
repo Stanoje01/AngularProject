@@ -47,7 +47,7 @@ export class RegisterComponent implements OnInit {
       this.formValue.reset();
     },
       err => {
-        alert("Doslo je do greske!!!!!")
+        alert("Uneli ste email ili username koji vec postoji u bazi podataka!")
       })
   }
 
